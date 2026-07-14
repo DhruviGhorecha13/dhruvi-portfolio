@@ -1,24 +1,24 @@
 /* ---------- Design tokens ---------- */
 :root {
-  --bg: #f6f8fb;
+  --bg: #f7f6f1;
   --surface: #ffffff;
-  --surface-alt: #eef2f7;
-  --text-primary: #14212e;
-  --text-secondary: #55677a;
-  --text-muted: #8695a6;
-  --border: #dde5ed;
-  --teal: #1b7a79;
-  --teal-dark: #145d5c;
-  --teal-soft: #e6f3f2;
-  --blue: #3562e0;
+  --surface-alt: #efeade;
+  --text-primary: #1c2333;
+  --text-secondary: #565f72;
+  --text-muted: #8991a3;
+  --border: #e3ded0;
+  --teal: #2f3e75;
+  --teal-dark: #232e58;
+  --teal-soft: #e8e9f4;
+  --blue: #b0813c;
   --radius-lg: 18px;
   --radius-md: 12px;
   --radius-sm: 8px;
-  --shadow-sm: 0 1px 2px rgba(20, 33, 46, 0.05);
-  --shadow-md: 0 8px 24px rgba(20, 33, 46, 0.07);
-  --font-display: 'Space Grotesk', 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --shadow-sm: 0 1px 2px rgba(28, 35, 51, 0.05);
+  --shadow-md: 0 8px 24px rgba(28, 35, 51, 0.08);
+  --font-display: 'Sora', 'IBM Plex Sans', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
   --container: 1080px;
 }
 
@@ -40,7 +40,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-display);
   margin: 0;
   color: var(--text-primary);
@@ -74,7 +76,10 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
@@ -96,7 +101,7 @@ img {
   padding-right: 0;
 }
 
-.section--alt > * {
+.section--alt>* {
   max-width: var(--container);
   margin-left: auto;
   margin-right: auto;
@@ -315,13 +320,27 @@ img {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.35; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.35;
+  }
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero__name {
@@ -429,7 +448,9 @@ img {
 }
 
 @keyframes rotate {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ---------- About ---------- */

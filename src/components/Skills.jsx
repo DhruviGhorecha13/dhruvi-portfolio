@@ -5,7 +5,7 @@ import {
   Database,
   Boxes,
   Workflow,
-  MonitorCog,
+  MonitorCheck,
 } from 'lucide-react'
 import Reveal from './Reveal.jsx'
 import { skillGroups, softSkills } from '../data.js'
@@ -17,7 +17,7 @@ const iconMap = {
   Database,
   Boxes,
   Workflow,
-  MonitorCog,
+  MonitorCog: MonitorCheck,
 }
 
 export default function Skills() {

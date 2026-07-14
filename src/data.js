@@ -32,7 +32,7 @@ export const skillGroups = [
   { title: 'Databases', icon: 'Database', items: ['MongoDB', 'MySQL'] },
   { title: 'DevOps & Tools', icon: 'Boxes', items: ['Docker', 'Terraform', 'Git', 'GitHub'] },
   { title: 'Platforms', icon: 'Workflow', items: ['Postman', 'Azure DevOps'] },
-  { title: 'Operating Systems', icon: 'MonitorCog', items: ['Windows', 'Linux'] },
+  { title: 'Operating Systems', icon: 'Monitor', items: ['Windows', 'Linux'] },
 ]
 
 export const softSkills = [
