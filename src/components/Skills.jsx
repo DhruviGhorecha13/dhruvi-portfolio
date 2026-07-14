@@ -5,6 +5,7 @@ import {
   Database,
   Boxes,
   Workflow,
+  MonitorCog,
 } from 'lucide-react'
 import Reveal from './Reveal.jsx'
 import { skillGroups, softSkills } from '../data.js'
