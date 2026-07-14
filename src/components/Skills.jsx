@@ -5,6 +5,7 @@ import {
   Database,
   Boxes,
   Workflow,
+  Monitor,
   MonitorCheck,
 } from 'lucide-react'
 import Reveal from './Reveal.jsx'
@@ -17,6 +18,7 @@ const iconMap = {
   Database,
   Boxes,
   Workflow,
+  Monitor,
   MonitorCog: MonitorCheck,
 }
 
@@ -30,7 +32,7 @@ export default function Skills() {
 
       <div className="skills-grid">
         {skillGroups.map((group, i) => {
-          const Icon = iconMap[group.icon]
+          const Icon = iconMap[group.icon] || Monitor
           return (
             <Reveal key={group.title} delay={i * 60}>
               <div className="card skill-card">
