@@ -5,8 +5,9 @@ import { profile } from '../data.js'
 export default function Contact() {
   return (
     <section id="contact" className="section contact">
+      <span className="section-index">07</span>
       <Reveal>
-        <p className="section-eyebrow">Exhibit 07 — Contact</p>
+        <p className="section-eyebrow">Contact</p>
         <h2 className="section-title">Have something worth building?</h2>
         <p className="contact__sub">My inbox is open, and so is my calendar.</p>
       </Reveal>
@@ -16,14 +17,14 @@ export default function Contact() {
           <a className="btn btn--primary" href={`mailto:${profile.email}`}>
             <Mail size={16} /> {profile.email}
           </a>
-          <a className="contact__icon" href={`tel:${profile.phone.replace(/\s/g, '')}`} aria-label="Phone">
-            <Phone size={18} />
+          <a className="contact__icon" href={`tel:${profile.phone.replace(/\s/g, '')}`}>
+            <Phone size={15} /> Call
           </a>
-          <a className="contact__icon" href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <Linkedin size={18} />
+          <a className="contact__icon" href={profile.linkedin} target="_blank" rel="noreferrer">
+            <Linkedin size={15} /> LinkedIn
           </a>
-          <a className="contact__icon" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
-            <Github size={18} />
+          <a className="contact__icon" href={profile.github} target="_blank" rel="noreferrer">
+            <Github size={15} /> GitHub
           </a>
         </div>
       </Reveal>

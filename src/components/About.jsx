@@ -1,12 +1,12 @@
-import { GraduationCap } from 'lucide-react'
 import Reveal from './Reveal.jsx'
 import { education } from '../data.js'
 
 export default function About() {
   return (
     <section id="about" className="section">
+      <span className="section-index">01</span>
       <Reveal>
-        <p className="section-eyebrow">Exhibit 01 — About</p>
+        <p className="section-eyebrow">About</p>
         <h2 className="section-title">Security-minded, product-focused.</h2>
       </Reveal>
 
@@ -21,21 +21,22 @@ export default function About() {
         </p>
       </Reveal>
 
-      <div className="education-grid">
-        {education.map((edu, i) => (
-          <Reveal key={edu.degree} delay={120 + i * 80}>
-            <div className="card education-card">
-              <div className="education-card__icon">
-                <GraduationCap size={20} strokeWidth={2} />
+      <Reveal delay={140}>
+        <div className="row-list">
+          {education.map((edu) => (
+            <div className="edu-row" key={edu.degree}>
+              <div className="edu-row__main">
+                <h3>{edu.degree}</h3>
+                <p className="edu-row__school">{edu.school}</p>
               </div>
-              <p className="education-card__period">{edu.period}</p>
-              <h3>{edu.degree}</h3>
-              <p className="education-card__school">{edu.school}</p>
-              <p className="education-card__detail">{edu.detail}</p>
+              <div className="edu-row__meta">
+                <span className="edu-row__period">{edu.period}</span>
+                <span className="edu-row__detail">{edu.detail}</span>
+              </div>
             </div>
-          </Reveal>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Reveal>
     </section>
   )
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, Stamp } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -26,8 +26,7 @@ export default function Header() {
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <div className="site-header__inner">
         <a href="#top" className="logo" onClick={closeMenu}>
-          <Stamp size={18} strokeWidth={2.2} />
-          <span>DG.</span>
+          Dhruvi Ghorecha
         </a>
 
         <nav className={`nav ${open ? 'nav--open' : ''}`}>
