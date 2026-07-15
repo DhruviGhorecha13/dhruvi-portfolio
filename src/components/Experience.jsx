@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section id="experience" className="section">
       <Reveal>
-        <p className="section-eyebrow">03 — Experience</p>
+        <p className="section-eyebrow">Exhibit 03 — Experience</p>
         <h2 className="section-title">Where I've worked.</h2>
       </Reveal>
 

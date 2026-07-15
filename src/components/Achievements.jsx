@@ -8,7 +8,7 @@ export default function Achievements() {
   return (
     <section id="achievements" className="section section--alt">
       <Reveal>
-        <p className="section-eyebrow">06 — Achievements</p>
+        <p className="section-eyebrow">Exhibit 06 — Achievements</p>
         <h2 className="section-title">Recognition along the way.</h2>
       </Reveal>
 

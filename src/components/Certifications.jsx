@@ -6,7 +6,7 @@ export default function Certifications() {
   return (
     <section id="certifications" className="section">
       <Reveal>
-        <p className="section-eyebrow">05 — Certifications</p>
+        <p className="section-eyebrow">Exhibit 05 — Certifications</p>
         <h2 className="section-title">Ongoing coursework.</h2>
       </Reveal>
 

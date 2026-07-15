@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id="about" className="section">
       <Reveal>
-        <p className="section-eyebrow">01 — About</p>
+        <p className="section-eyebrow">Exhibit 01 — About</p>
         <h2 className="section-title">Security-minded, product-focused.</h2>
       </Reveal>
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, ShieldCheck } from 'lucide-react'
+import { Menu, X, Stamp } from 'lucide-react'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -26,7 +26,7 @@ export default function Header() {
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <div className="site-header__inner">
         <a href="#top" className="logo" onClick={closeMenu}>
-          <ShieldCheck size={18} strokeWidth={2.2} />
+          <Stamp size={18} strokeWidth={2.2} />
           <span>DG.</span>
         </a>
 

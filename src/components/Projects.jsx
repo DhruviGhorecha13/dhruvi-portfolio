@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section section--alt">
       <Reveal>
-        <p className="section-eyebrow">04 — Projects</p>
+        <p className="section-eyebrow">Exhibit 04 — Projects</p>
         <h2 className="section-title">Things I've built end to end.</h2>
       </Reveal>
 

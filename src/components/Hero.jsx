@@ -1,13 +1,20 @@
-import { Mail, ArrowDown, Github, Linkedin, Phone } from 'lucide-react'
-import { profile } from '../data.js'
+import { Mail, ArrowDown, Github, Linkedin, Stamp } from 'lucide-react'
+import { profile, education } from '../data.js'
+
+const facts = [
+  { label: 'Status', value: 'Open to work' },
+  { label: 'Focus', value: 'DevSecOps' },
+  { label: 'Based', value: 'Ahmedabad, IN' },
+  { label: 'Study', value: education[0].degree.match(/\(([^)]+)\)/)?.[1] || 'MCA' },
+]
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
       <div className="hero__content">
-        <p className="eyebrow eyebrow--mono">
-          <span className="dot" /> scan --target="dhruvi" --status
-          <span className="cursor">_</span>
+        <p className="eyebrow--mono">
+          <Stamp size={14} strokeWidth={2.4} />
+          file no. dg — verified profile
         </p>
 
         <h1 className="hero__name">{profile.name}</h1>
@@ -38,10 +45,21 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero__badge" aria-hidden="true">
-        <div className="scan-ring">
-          <div className="scan-ring__sweep" />
-          <div className="scan-ring__core">DG</div>
+      <div className="hero__badge">
+        <div className="seal" aria-hidden="true">
+          <div className="seal__core">
+            <span className="seal__mark">DG</span>
+            <span className="seal__label">Verified</span>
+          </div>
+        </div>
+
+        <div className="dossier">
+          {facts.map((fact) => (
+            <div className="dossier__row" key={fact.label}>
+              <span className="dossier__label">{fact.label}</span>
+              <span className="dossier__value">{fact.value}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

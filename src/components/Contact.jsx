@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section contact">
       <Reveal>
-        <p className="section-eyebrow">07 — Contact</p>
+        <p className="section-eyebrow">Exhibit 07 — Contact</p>
         <h2 className="section-title">Have something worth building?</h2>
         <p className="contact__sub">My inbox is open, and so is my calendar.</p>
       </Reveal>
